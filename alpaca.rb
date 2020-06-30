@@ -6,6 +6,6 @@ class Alpaca < Formula
     version "1.1.0"
 
     def install
-        bin.install "alpaca"
+        bin.install "darwin-amd64" => "alpaca"
     end
 end
