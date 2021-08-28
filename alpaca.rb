@@ -1,12 +1,12 @@
 class Alpaca < Formula
     desc "A local HTTP proxy for command-line tools. Supports PAC scripts and NTLM authentication."
     homepage "https://github.com/samuong/alpaca"
-    url "https://github.com/samuong/alpaca/releases/download/v1.1.0/darwin-amd64"
-    sha256 "e8ab7248e00ab3fcdff6a94444ea7fe408287dfd077f303a4fc4805eed85605a"
-    version "1.1.0"
+    url "https://github.com/samuong/alpaca/releases/download/v1.2.0/alpaca_v1.2.0_darwin-amd64"
+    sha256 "d21e2119e907a212e7b3ea28a6b9e7fd2723dc44be94b2d6c4b5c13398078172"
+    version "1.2.0"
 
     def install
-        bin.install "darwin-amd64" => "alpaca"
+        bin.install "alpaca_v1.2.0_darwin-amd64" => "alpaca"
     end
 
     plist_options :startup => true
