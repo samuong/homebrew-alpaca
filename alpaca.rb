@@ -2,22 +2,22 @@ class Alpaca < Formula
     desc "A local HTTP proxy for command-line tools. Supports PAC scripts and NTLM authentication."
     homepage "https://github.com/samuong/alpaca"
     if OS.mac? && Hardware::CPU.intel?
-        url "https://github.com/samuong/alpaca/releases/download/v1.2.0/alpaca_v1.2.0_darwin-amd64"
-        sha256 "d21e2119e907a212e7b3ea28a6b9e7fd2723dc44be94b2d6c4b5c13398078172"
+        url "https://github.com/samuong/alpaca/releases/download/v1.2.1/alpaca_v1.2.1_darwin-amd64"
+        sha256 "6c0b0afc5edab9665a5f2a23e9718deef0cb50e9a1263e42f3c9af90b011ca97"
     end
     if OS.mac? && !Hardware::CPU.intel?
-        url "https://github.com/samuong/alpaca/releases/download/v1.2.0/alpaca_v1.2.0_darwin-arm64"
-        sha256 "0231da653167609b77ee3ee8d2542bf700a85cdb3270aa72e8c2fc91e761bc84"
+        url "https://github.com/samuong/alpaca/releases/download/v1.2.1/alpaca_v1.2.1_darwin-arm64"
+        sha256 "eee463d3be1b451fdfba784d69f2e02677e9ace83c122af2a12f9fd0024e675b"
     end
-    version "1.2.0"
+    version "1.2.1"
 
     def install
         if OS.mac? && Hardware::CPU.intel?
-            bin.install "alpaca_v1.2.0_darwin-amd64" => "alpaca"
+            bin.install "alpaca_v1.2.1_darwin-amd64" => "alpaca"
         
         end
         if OS.mac? && !Hardware::CPU.intel?
-            bin.install "alpaca_v1.2.0_darwin-arm64" => "alpaca"
+            bin.install "alpaca_v1.2.1_darwin-arm64" => "alpaca"
         end
     end
 
