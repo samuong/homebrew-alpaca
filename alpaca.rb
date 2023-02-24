@@ -22,8 +22,7 @@ class Alpaca < Formula
     end
     
     service do
-        run opt_bin/alpaca
-        log_path var/"log/alpaca.log"
-        error_log_path var/"log/alpaca-error.log"
+        run opt_bin/"alpaca"
+        error_log_path var/"log/alpaca.log"
     end
 end
